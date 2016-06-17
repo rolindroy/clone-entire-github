@@ -40,8 +40,8 @@ curlClient=`which curl`
 			if [ ! -d $repo ]
 				then
 				echo $(pwd);
-				echo "svn co $githubBaseUrl/$repoUrl/$repo.git"
-				#git clone $githubBaseUrl/$repoUrl/$repo.git;
+				#echo "svn co $githubBaseUrl/$repoUrl/$repo.git"
+				git clone $githubBaseUrl/$repoUrl/$repo.git;
 			else
 				git pull $githubBaseUrl/$repoUrl/$repo.git; 
 			fi 
