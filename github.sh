@@ -1,7 +1,7 @@
 #!/bin/bash
 
 githubBaseUrl="https://github.com";
-repoUrl="rolindroy";
+repoUrl="username";  ## give the username here. It will download all the github project which belongs to the respective username
 tempLocation=`pwd`/temp;
 tempFile="data"
 echo "INFO:: Checking temporary files."
