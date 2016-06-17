@@ -1,7 +1,7 @@
 #!/bin/bash
 
 githubBaseUrl="https://github.com";
-repoUrl="narezchand";
+repoUrl="rolindroy";
 tempLocation=`pwd`/temp;
 tempFile="data"
 echo "INFO:: Checking temporary files."
