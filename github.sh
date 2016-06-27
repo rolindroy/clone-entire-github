@@ -19,6 +19,7 @@ curlClient=`which curl`
 		echo "ERROR:: curlClient not found.";
 	else
 		echo $githubBaseUrl"/"$repoUrl"?tab=repositories";
+		# curl -I $githubBaseUrl"/"$repoUrl"?tab=repositories" | awk '/HTTP/ {print $2}'
 		curl $githubBaseUrl"/"$repoUrl"?tab=repositories" > $tempLocation/$tempFile;
 		sed -n '/codeRepository">/,/<\/a>/p' $tempLocation/$tempFile |  sed -e 's/<\/a>$//g;/">/d;s/ //g' > $tempLocation"/repoList";
 		
